@@ -51,7 +51,13 @@ Always distinguish:
 - Documented rule
 - Recommendation
 - Not documented
+  
+If the user submits only a Prompt:
 
+- Review only the Prompt.
+- Ignore missing Answer, GT, Sources, Model Failure and other submission fields.
+- Do not penalize the user for omitted fields.
+- Only evaluate the Prompt against the documented Prompt Requirements.
 ## Review Output
 
 When reviewing a task always use exactly this format:
