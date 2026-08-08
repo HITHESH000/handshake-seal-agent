@@ -26,109 +26,108 @@ Whenever the project documentation changes, update this file.
 ## Purpose
 
 * 
-**Building High-Quality AI Training Data**: Handshake AI acts as a data partner for leading AI labs to create high-quality data that drives access, fairness, and innovation in designated domains.
+**Building High-Quality Evaluation Data**: Handshake AI serves as a data partner for AI labs to create high-quality data that advances AI capabilities across specialized domains.
 
 
 * 
-**Creating Complex Search Prompts**: Project SEAL India requires contributors to write challenging, multi-constraint search questions that cannot be answered from memory and require digging across multiple web sources.
-
-
-* 
-**Evaluating AI Capabilities**: The questions are designed to stump even strong AI models equipped with web search capabilities by forcing a meaningful model failure.
+**Driving Access, Fairness, and Innovation**: Contracted contributors build data designed to improve the access, fairness, and technical innovation of AI search and reasoning models.
 
 
 
 ## Objectives
 
 * 
-**Deliver Approved Tasks**: Get tasks to the "Approved / Ready-to-Deliver (RTD)" stage, which is required for delivery to the customer and for contributor payment .
+**Create Hard, Multi-Hop Web Search Prompts**: Develop complex, self-contained questions requiring information from **3 or more distinct web sources** that cannot be answered from memory alone.
 
 
 * 
-**Achieve Unthrottled Status**: Successfully land at least 1 RTD task within the initial 5 trial attempts to lift tasking limits and gain access to unlimited tasks and incentives .
+**Stump Advanced Search-Enabled AI Models**: Craft questions difficult enough to cause strong AI models equipped with web search to reach an incorrect final answer, while remaining solvable by a careful human researcher.
 
 
 * 
-**Provide Golden Trajectories**: Supply clean, accurate, step-by-step browsing sequences showing exactly how a human researcher solves each question .
+**Pinpoint Unique, Verifiable Answers**: Ensure each prompt narrows down to exactly **one short, verifiable answer** (a specific entity) with no reasonable alternative answers or false premises.
 
 
 * 
-**Ensure Strict Confidentiality**: Protect customer and platform privacy by keeping all details, customer names, platform screenshots, and video recordings strictly confidential.
+**Provide Defensible Golden Trajectories**: Document the step-by-step browsing path and authoritative primary sources required to solve the question, establishing a gold-standard benchmark for customer delivery.
 
 
 
 ## Main Tasks
 
-1. 
-**Check Assigned Domain**: Review the pre-assigned domain displayed at the top of the task (e.g., History, Business, Finance, Science & Technology, Sports) and ensure the prompt fits within it .
+1. **Check Your Domain**: Verify that the question subject falls strictly within the pre-assigned domain (selected from 16 domains such as *Legal, History, Geography, Science & Tech, Sports, TV Shows & Movies, etc.*).
+2. **Write the Prompt**: Draft a clear, natural search prompt in self-contained English between **70 and 150 words** that requires chaining multiple constraints across 3+ sources.
+3. **Write the Answer**: Provide a single short entity answer (e.g., a name, place, date, number, title, or event) without long explanatory paragraphs.
+4. **Pass Quality Checks**: Verify the prompt satisfies all **8 mandatory quality rules**:
+* 
+*Requires search* (cannot be answered from common knowledge).
 
 
-2. 
-**Write Prompt**: Draft a clear, self-contained English search prompt between 70–150 words that genuinely requires 3 or more distinct sources to answer .
+* 
+*No shortcuts* (wording doesn't leak or hint at the answer).
 
 
-3. 
-**Write Answer**: Provide exactly one short, verifiable single-entity answer (a Name, Place, Date, Number, Title, or Event) rather than an explanatory paragraph .
+* 
+*No external references* (no "see table above" or attachments).
 
 
-4. 
-**Pass Quality Checks**: Verify that the prompt satisfies all 8 quality rules (Requires search, No shortcuts, No external references, Clear grammatical attachment, Question is specific, Claims are factual, Unique obvious answer, Answer is correct) .
+* 
+*Clear grammatical attachment* (unambiguous modifiers and pronouns).
+
+
+* 
+*Question is specific* (constraints lead to exactly one entity).
+
+
+* 
+*Claims are factual* (all premises in the question are true).
+
+
+* 
+*Unique obvious answer* (one answer clearly dominates).
+
+
+* 
+*Answer is correct & verifiable* (matches primary sources).
+
+
 
 
 5. 
-**Review Model Responses**: Test the prompt in a personal ChatGPT account to confirm that the model produces a genuine failure by reaching an incorrect final answer .
+**Review Model Responses**: Test the prompt in your personal ChatGPT account to confirm the AI model genuinely fails by outputting an incorrect final answer.
 
 
-6. 
-**Record Model Response**: Paste the model's full response, provide the Chat Share Link, and confirm the failure status .
-
-
-7. 
-**Explain Failure**: Write a 2–4 sentence explanation detailing where the model went wrong and identifying the correct answer .
-
-
-8. 
-**Write Golden Trajectory**: Formulate the step-by-step browsing sequence (Search → Fetch → Verify → Filter) detailing exact search queries, deep-link URLs, page locations, and verification steps .
-
-
-9. 
-**List Sources**: Provide a list of at least three live, direct deep-link primary/authoritative sources matching every step in the golden trajectory .
-
-
-10. 
-**Submit Task**: Submit the completed task into the review queue (Review 1, Review 2, and Audit) .
-
-
+6. **Record Model Response**: Copy and paste the model's full response, provide the Chat Share Link, and confirm the failure status.
+7. **Explain the Failure**: Write 2 to 4 sentences identifying the correct answer and explaining specifically where the model went off track.
+8. **Write the Golden Trajectory (GT)**: Detail the precise browsing path using the required 4-part structure (**Search → Fetch → Verify → Filter**) with direct deep links and exact on-page locations.
+9. **List Sources**: Provide deep links to at least 3 live, non-paywalled primary sources mapping directly to each step in the Golden Trajectory.
+10. **Submit for Review**: Complete the final checklist and submit the completed task into the review queue.
 
 ## Key Concepts
 
 * 
-**Trial Period**: The initial window capped at 5 attempts where taskers demonstrate their ability to hit the quality bar by producing 1 RTD task .
+**Ready-to-Deliver (RTD)**: An approved task that has cleared review and is ready for customer delivery; payment is issued only for tasks reaching RTD status.
 
 
 * 
-**Unthrottled**: The status achieved once a tasker clears trial requirements; task limits are removed, allowing unlimited task claiming and access to project incentives .
+**Trial Period & Attempts**: Contributors start with a trial limit of **5 attempts** (claimed and completed tasks) and must land **1 RTD task** within those 5 attempts to clear the trial.
 
 
+* **Unthrottled Status**: Reached after obtaining 1 RTD task during the trial; lifts all task volume caps, unlocks incentive eligibility, and provides a $120 incentive for setting up a GPT-5.5 Pro Thinking Extended subscription.
+* **Meaningful Model Failure**: Occurs when an AI model searches, reasons, and confidently outputs a wrong final answer due to the complexity of the research chain (not due to prompt ambiguity, typos, rounding/formatting differences, or correct refusals).
+* **Golden Trajectory (GT)**: The ideal step-by-step browsing sequence a person takes to solve the prompt from scratch; it requires exact deep-link URLs, specific location anchors (e.g., paragraph number, table row), and logical filtering explanations.
+* **Review Pipeline (R1, R2, Audit)**:
 * 
-**Ready-to-Deliver (RTD)**: An approved task that has successfully passed review; payment is strictly tied to tasks reaching this status .
+*Review 1 (R1)*: Initial review verifying prompt, answer, model failure, GT, and sources.
 
 
-* 
-**Meaningful Model Failure**: A valid failure where an AI model searches and reasons but confidently outputs an incorrect final answer due to prompt complexity rather than prompt ambiguity or formatting issues .
+* *Review 2 (R2)*: Second-level review by experienced reviewers with a tight focus on catching true defects (unusable GT, incorrect answers, invalid prompts).
+* *Audit*: Final audit before tasks are delivered to the customer.
 
 
-* 
-**Golden Trajectory (GT)**: The ideal step-by-step browsing path a human researcher follows to solve the question from scratch; it requires direct URLs, exact page locations, and filter reasoning for every step .
-
-
-* **Review Pipeline**:
-* 
-**Review 1 (R1)**: The primary review where tasks are evaluated and either sent back for substantive (Red) errors or edited and approved for minor (Yellow) issues .
-
-
-* 
-**Review 2 (R2)**: A second review conducted by experienced reviewers to verify links, answers, prompts, and model failures before audit and delivery .
+* **Red vs. Yellow Issues**:
+* *RED (Send Back)*: Substantive errors (broken prompt, incorrect answer, no real model failure, unusable GT) requiring the task to be sent back for changes; applies only when SQS score is 1 or 2.
+* *YELLOW (Edit & Approve)*: Fixable in-review issues (formatting, typos, minor GT cleanup) where the reviewer fixes the issue directly and approves the task; mandatory for tasks with SQS score of 3 or higher.ucted by experienced reviewers to verify links, answers, prompts, and model failures before audit and delivery .
 
 
 * 
