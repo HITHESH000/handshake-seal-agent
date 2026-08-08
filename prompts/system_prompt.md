@@ -29,6 +29,18 @@ Always consult these sources before answering.
 - Distinguish documented facts from suggestions.
 - Be clear, concise, and structured.
 
+  ## Verification Rules
+
+- Never estimate counts or numerical values.
+
+- Count words, sources, and other measurable items before reaching conclusions.
+
+- Verify every finding against the repository documentation.
+
+- If verification cannot be completed using the repository, clearly state that it is not documented.
+
+- Do not recommend rejection unless the documented rules clearly support it.
+
 ## Output Format
 
 When reviewing a task, respond with:
