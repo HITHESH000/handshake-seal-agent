@@ -2,50 +2,169 @@
 
 ## Start
 
-* **Check Domain Assignment:** Contributors must review their pre-assigned domain displayed at the top of the task (e.g., History, Business, Finance, Science & Technology, Sports) before beginning.
-* **Scope Alignment:** Ensure the subject matter of the question fits strictly within the pre-assigned domain.
+* 
+**Domain Check**: The task begins by checking the pre-assigned domain displayed at the top of the task . The question's subject must strictly fall within that domain.
+
+
+* **Task Claiming & Attempts**:
+* Contributors start in a trial period capped at **5 attempts** (claimed and completed tasks) .
+
+
+* Landing at least **1 Approved / Ready-to-Deliver (RTD)** task within those 5 attempts unthrottles the contributor, lifting all task volume caps permanently .
+
+
+
+
 
 ## Prompt Creation
 
-* **Write the Prompt:** Draft a clear, self-contained search prompt written in natural English.
-* **Word Count & Research Constraints:** Ensure the prompt is between 70 and 150 words long and constructed to require at least 3 distinct web sources to answer.
-* **Draft the Single Answer:** Formulate exactly one short, verifiable single-entity answer (Name, Place, Date, Number, Title, or Event). No long-form explanations or paragraphs are allowed.
+* **Write the Prompt**:
+* Write a clear, natural search prompt in self-contained English .
+
+
+* Length must be **70 to 150 words**.
+
+
+* Must genuinely require **3 or more distinct sources** across the web to answer.
+
+
+* Pose a direct question; do not narrate research steps or name specific sources to open.
+
+
+
+
+* **Write the Answer**:
+* Provide exactly one correct answer formatted as a single short entity (Name, Place, Date, Number, Title, or Event) .
+
+
+* Explanatory paragraphs or long-form answers are strictly prohibited.
+
+
+
+
 
 ## Validation
 
-* **Pass 8 Core Quality Rules:** Verify that all 8 rules are marked True:
+* 
+**Pass Quality Checks**: Verify that the prompt passes all **8 mandatory quality rules** as `True` :
 
-  1. *Requires search*.
-  2. *No shortcuts*.
-  3. *No external references*.
-  4. *Clear grammatical attachment*.
-  5. *Question is specific*.
-  6. *Claims are factual*.
-  7. *Unique obvious answer*.
-  8. *Answer is correct*.
-* **Test Against AI Model:** Input the prompt into a personal ChatGPT account to test if it produces a genuine model failure (the model searches and confidently reaches an incorrect final answer).
-* **Record Evidence & Justification:** Paste the model's complete final response, attach the ChatGPT Share Link, confirm the response failure, and write a 2–4 sentence explanation of why the model failed.
-* **Write Golden Trajectory (GT):** Document the exact step-by-step human search path following the required 4-part format (Search → Fetch → Verify → Filter), citing exact deep-link URLs and page locations for every step.
-* **List Sources:** Compile a matching list of at least 3 live, direct deep-link authoritative/primary sources corresponding to every step in the GT.
 
-## Review
+1. 
+*Requires search* (cannot be answered from common knowledge).
 
-* **Submit Task:** Send the task into the review queue.
-* **Review 1 (R1):**
 
-  * An R1 reviewer evaluates the prompt, answer, quality checks, model failure, GT, and sources.
-  * *Red Action:* If substantively broken, the reviewer sends it back with tagged errors, praise, and concrete instructions for fixes.
-  * *Yellow Action:* If minor/cosmetic issues are found, the reviewer edits and approves the task.
-* **Review 2 (R2):** Experienced reviewers perform a second check on R1-approved tasks to verify link availability, source text in HTML, model failure validity, prompt cleanliness, and absence of competing defensible answers.
-* **Audit:** The project team audits approved tasks before final customer delivery.
+2. 
+*No shortcuts* (wording does not leak or hint at the answer).
+
+
+3. 
+*No external references* (self-contained; no "see table above" or attachments).
+
+
+4. 
+*Clear grammatical attachment* (unambiguous modifiers and pronouns).
+
+
+5. 
+*Question is specific* (constraints lead to exactly one entity).
+
+
+6. 
+*Claims are factual* (all premises and factual statements are true).
+
+
+7. 
+*Unique obvious answer* (one unambiguous answer clearly dominates).
+
+
+8. 
+*Answer is correct & verifiable* (accurate against primary sources).
+
+
+
+
+* 
+**Review Model Responses**: Test the prompt in your personal ChatGPT account to ensure the AI model genuinely fails by outputting an incorrect final answer .
+
+
+* 
+**Record Model Response**: Paste the model's full response, provide the Chat Share Link, and answer "Yes" to confirm the failure status .
+
+
+* 
+**Explain the Failure**: Write **2 to 4 sentences** describing specifically where the model went wrong and naming the correct answer .
+
+
+* 
+**Write the Golden Trajectory (GT)**: Document the step-by-step browsing path using the required 4-part structure (**Search → Fetch → Verify → Filter**) with direct deep-link URLs and exact on-page location anchors .
+
+
+* 
+**List Your Sources**: Provide direct deep links to at least **3 live, non-paywalled primary sources** that map directly to the steps in the Golden Trajectory .
+
+
 
 ## Submission
 
-* **Ready-to-Deliver (RTD):** A task that successfully passes review and audit reaches the RTD status.
-* **Customer Hand-off:** RTD tasks are delivered to the customer AI labs.
+* **Submit the Task**:
+* Complete the 8-item final submission checklist .
+
+
+* Confirm the prompt fits the domain, answer is a short string, quality rules pass, genuine model failure is recorded, failure explanation is written, GT walks step-by-step, and sources map to primary evidence .
+
+
+* Click submit to enter the automated quality checks and review queue.
+
+
+
+
+
+## Review
+
+* **Review 1 (R1)**:
+* Reviewer verifies the prompt, answer, model failure, golden trajectory, and sources.
+
+
+* 
+**Edit + Approve (Yellow)**: Applied for fixable/cosmetic issues (typos, GT cleanup, missing page locations) when prompt and answer are sound; required for tasks with SQS score $\ge 3$ .
+
+
+* 
+**Send Back / Request Changes (Red)**: Applied for substantive broken tasks (domain mismatch, bad prompt, incorrect answer, unusable GT, false claims); permitted **only when SQS score is 1 or 2** .
+
+
+* New and throttled reviewers must get sign-off in the sign-off channel before approving or sending back .
+
+
+
+
+* **Review 2 (R2)**:
+* A second check by experienced reviewers on R1-approved tasks prior to audit .
+
+
+* Focuses strictly on major defects (broken URLs, unusable GT, incorrect answers, invalid prompts) .
+
+
+
+
+* 
+**Escalation**: Any task suspected of AI/LLM generation is escalated directly to project administrators rather than sent back .
+
+
 
 ## Completion
 
-* **Payment Eligibility:** Contributors receive payment exclusively for tasks that successfully reach Approved / Ready-to-Deliver (RTD) status. Unapproved tasks are unpaid.
-* **Unthrottling Progress:** Landing 1 RTD task within the initial 5 trial attempts successfully clears the trial phase, unlocking unthrottled access (unlimited task limits) and eligibility for additional incentives.
+* **Ready-to-Deliver (RTD)**:
+* Approved tasks clear R1, R2, and final project team audit to reach Ready-to-Deliver (RTD) status for customer delivery .
 
+
+
+
+* **Payment**:
+* Payment is issued **only for tasks that reach RTD status** (both during the trial and after being unthrottled).
+
+
+* Tasks that do not reach RTD are not paid.
+
+
+* Unthrottled contributors also receive a **$120 incentive** to set up a GPT-5.5 Pro Thinking Extended subscription for tasking.
