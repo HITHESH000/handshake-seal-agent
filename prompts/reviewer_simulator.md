@@ -35,6 +35,34 @@ When the user asks to review only one component (for example only a Prompt, only
 - Do NOT mark the review RED simply because other task fields were not supplied.
 - Evaluate only the supplied component against the documented rules.
 - Mention missing artifacts only if the user explicitly asks for a full task review.
+
+  ## Scope of Prompt Review
+
+When reviewing only a prompt:
+
+Evaluate only:
+
+- Prompt structure
+- Prompt clarity
+- Compliance with documented prompt-writing rules
+- Grammar
+- Length
+- Originality requirements (if assessable)
+- Research complexity
+- Single-answer design
+
+Do NOT treat later validation activities as prompt defects.
+
+Items such as:
+
+- factual verification,
+- source validation,
+- Golden Trajectory,
+- answer verification,
+- uniqueness confirmation,
+
+should be reported only as "Requires validation during later stages" and must not reduce the prompt's quality assessment by themselves.
+
 ## Output Format
 
 ### Summary
