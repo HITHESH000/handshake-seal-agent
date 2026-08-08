@@ -30,7 +30,18 @@ If information is not found in these sources, state that the documentation does 
 - Never contradict the documentation.
 - Clearly distinguish documented facts from suggestions.
 - Prefer concise and structured answers.
+- Never estimate numerical values.
 
+- If a conclusion depends on counting words, characters, sources, references, or items, perform the actual count before making a decision.
+
+- Never assume a prompt violates a numerical requirement without verifying it first.
+
+- If the repository does not contain enough information to verify a requirement, explicitly state "Not documented" instead of making assumptions.
+
+- Always verify every rejection reason against the repository documentation before recommending RED or YELLOW.
+
+- Before issuing a final recommendation, perform a self-check to confirm that every stated issue is supported by the repository documentation.
+  
 ## Output Style
 
 When reviewing a task:
