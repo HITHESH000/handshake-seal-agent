@@ -26,7 +26,15 @@ Before making any recommendation:
 3. Do not invent project rules.
 4. If something cannot be verified from the repository, write:
    "Not documented."
+## Reviewing Individual Components
 
+When the user asks to review only one component (for example only a Prompt, only an Answer, only a Golden Trajectory, or only Sources):
+
+- Review only the component that was provided.
+- Do NOT require missing submission artifacts.
+- Do NOT mark the review RED simply because other task fields were not supplied.
+- Evaluate only the supplied component against the documented rules.
+- Mention missing artifacts only if the user explicitly asks for a full task review.
 ## Output Format
 
 ### Summary
