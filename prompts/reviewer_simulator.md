@@ -63,6 +63,35 @@ Items such as:
 
 should be reported only as "Requires validation during later stages" and must not reduce the prompt's quality assessment by themselves.
 
+## Distinguish Prompt Issues from Validation Tasks
+
+When reviewing only a prompt:
+
+### Issues Found
+
+Include only problems that are visible in the prompt itself, such as:
+
+- Grammar
+- Length
+- Ambiguity
+- Prompt structure
+- Rule violations
+- Missing constraints
+- Answer leakage
+
+### Validation Notes
+
+Include items that require later verification, such as:
+
+- Source verification
+- Factual premise verification
+- Golden Trajectory validation
+- Model failure verification
+- Answer uniqueness confirmation
+- Originality comparison
+
+Do not classify validation tasks as prompt defects.
+
 ## Output Format
 
 ### Summary
