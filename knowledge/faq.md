@@ -1,91 +1,153 @@
 # FAQ
 
-### What is Handshake AI?
+### What is Project Seal India?
 
-Handshake AI is a trusted data partner for leading AI labs that hand-picks individuals to create data that advances AI in specific domains. Contributors are officially contracted with Handshake, not directly with the AI lab.
+Project Seal India is a project under Handshake AI where contracted contributors create challenging multi-hop web search questions and benchmark prompts designed to test, evaluate, and advance AI model capabilities in specialized domains.
 
-### What is Project SEAL India?
+### What are the confidentiality rules for Project Seal India?
 
-Project SEAL India is a project where contributors write challenging, multi-constraint search questions that cannot be answered from memory and require digging across multiple web sources. Every question must have one short, verifiable answer that stumps a strong AI model allowed to search.
+Project Seal India is highly confidential. Contributors must not disclose the customer's name, the nature of the content, or share any screenshots or videos of the customer platform under any circumstances. Contributors who wish to list the role on a resume or LinkedIn profile must follow the Fellow Resume Policy.
 
-### What are the confidentiality rules for Project SEAL India?
+### How does task access and trial unthrottling work?
 
-Under no circumstances should contributors disclose the customer's name, the nature of the content, or share any screenshots or videos of the customer platform.
+Every contributor begins in a trial window capped at 5 attempts (claimed and completed tasks). To clear the trial and become unthrottled, a contributor must land at least 1 task that reaches Ready-to-Deliver (RTD) status within those 5 attempts. Once unthrottled, the task volume cap is permanently lifted.
 
-### How does the trial phase work compared to being unthrottled?
+### How are contributors paid for their work?
 
-* **Trial:** Access is capped at 5 attempts to prove you can hit the quality bar.
-* **Unthrottled:** Once you land 1 Ready-to-Deliver (RTD) task within your first 5 attempts, the task limit is lifted for good, allowing you to take unlimited tasks and become eligible for incentives.
+Payment is tied strictly to quality, not progress. Contributors are paid for every task that reaches Approved / Ready-to-Deliver (RTD) status, both during the trial window and after being unthrottled. Submitting a task does not guarantee payment, and tasks that do not reach RTD status are not paid.
 
-### How do contributors get paid?
+### What incentive is offered to unthrottled contributors?
 
-Payment is tied strictly to quality, not progress. Contributors are paid for every task that reaches the Approved / Ready-to-Deliver (RTD) stage. Tasks that do not reach RTD (unapproved or rejected tasks) are not paid.
+Contributors who obtain 1 RTD task and clear the trial receive a $120 incentive to set up a GPT-5.5 Pro Thinking Extended subscription to use while tasking.
 
-### What incentive is provided upon getting unthrottled?
+### What are the official prompt-writing requirements?
 
-Unthrottled contributors receive a $120 incentive to set up a GPT-5.5 Pro Thinking Extended subscription to use while tasking.
+A valid prompt must:
 
-### What is a "Ready-to-Deliver (RTD)" task?
+* Be written in clear, self-contained English as a natural search prompt.
 
-An RTD task is an approved task that has passed review and quality checks; only these count toward clearing the trial and getting paid.
 
-### What is a "Meaningful Model Failure"?
+* Be between **70 and 150 words** in length.
 
-A meaningful model failure occurs when the model reaches an incorrect final answer due to the complexity of the prompt, rather than due to prompt ambiguity, underspecification, or formatting issues.
 
-### What are the prompt length and language requirements?
+* Fit strictly within the pre-assigned domain displayed at the top of the task.
+* Genuinely require **3 or more distinct web sources** across the web to answer.
 
-Prompts must be written in clear, self-contained English and be between 70 and 150 words long.
 
-### What type of answer is required for a prompt?
+* Pose a direct question rather than writing step-by-step lookup instructions or naming exact sources to open.
 
-The answer must be a single short entity—such as a Name, Place, Date, Number, Title, or Event. Explanatory or long-form paragraph answers are strictly forbidden.
 
-### What is the Golden Trajectory (GT)?
+* Be completely original and not reused or copied from project examples.
 
-The Golden Trajectory is the ideal step-by-step browsing sequence a person would take to reach the correct answer from scratch. It must follow a strict 4-part format for every step:
 
-**Search query and navigation path → Fetch URL and exact location → Verify constraint → Filter explanation.**
 
-### What causes a Golden Trajectory to be rejected?
+### What formatting and accuracy rules apply to the answer?
 
-Top causes for GT rejections include:
+* The answer must be a single, short string representing a specific entity (such as a name, place, date, number, title, or event).
+* Explanatory paragraphs or long-form descriptions are strictly prohibited.
 
-* Missing deep-link URLs or missing exact source locations (the #1 rejection cause).
-* Reverse-engineering the steps backward from the answer instead of deriving them forward.
-* Using LLMs or AI tools to write the GT.
-* Relying on manual arithmetic to construct the final answer instead of reading it directly from a source.
-* Mismatched figures or URLs between the GT, answer, and source list.
+
+* The answer must be printed on a live, trustworthy web page where it can be highlighted in plain text.
+
+
+* Mental math or arithmetic derivation of the final answer is prohibited; any numeric answer must be read directly off the source page.
+
+
 
 ### What are the 8 quality checks every task must pass?
 
-1. **Requires search:** Cannot be answered from common knowledge or a single lookup.
-2. **No shortcuts:** Wording does not leak or hint at the answer.
-3. **No external references:** Self-contained without attachments or phrases like "see table above".
-4. **Clear grammatical attachment:** Every clause attaches unambiguously to one referent.
-5. **Question is specific:** Removing the answer leaves constraints that point to exactly one entity.
-6. **Claims are factual:** Every factual claim in the question is true.
-7. **Unique obvious answer:** After research, one answer clearly dominates.
-8. **Answer is correct:** Factually correct and verifiable against primary sources.
+All 8 rules must evaluate to `True` for a task to pass:
 
-### How do reviewers decide between "Send Back (Red)" and "Fix and Approve (Yellow)"?
+1. 
+**Requires Search**: Cannot be answered from common knowledge or single lookups.
 
-* **Red (Send Back):** The task is substantively broken (e.g., prompt fails quality checks, wrong answer, missing model failure, broken GT logic).
-* **Yellow (Fix & Approve):** The issue is fixable in review without changing task substance (e.g., typos, formatting, minor GT structural order, reordering sources, missing page location tags). Reviewers must not send tasks back for Yellow issues alone.
 
-### When are reviewers allowed to reject/send back a task?
+2. 
+**No Shortcuts**: Wording does not leak, reveal, or strongly hint at the answer.
 
-Reviewers should only reject a task when they assign it a Subjective Quality Score (SQS) of 1 or 2. Rejecting a task given an SQS score of 3 or above is considered a review error.
 
-### What structure must every reviewer send-back comment follow?
+3. 
+**No External References**: Self-contained with no mentions of attachments, images, or "table above".
 
-When sending a task back, reviewers must include:
 
-1. Praise for what was done well.
-2. Name each error specifically with its correct error tag.
-3. Concrete, in-depth guidance on how to fix the task.
+4. 
+**Clear Grammatical Attachment**: Modifiers and pronouns attach unambiguously to one referent.
 
-### How should reviewers handle suspected AI/LLM usage?
 
-If a task appears AI-generated (e.g., templated GT text, empty/deleted ChatGPT share links, fabricated citations), reviewers must **escalate** the task rather than simply sending it back. Escalation flags it for the project team and protects reviewer pay for the work performed.
+5. 
+**Question is Specific**: Constraints narrow the pool down to exactly one entity.
 
+
+6. 
+**Claims are Factual**: Every factual statement and premise in the prompt is verified true.
+
+
+7. 
+**Unique Obvious Answer**: After research, one unambiguous answer clearly dominates.
+
+
+8. 
+**Answer is Correct**: Factually accurate and verifiable against primary sources.
+
+
+
+### What defines a genuine model failure?
+
+A genuine model failure occurs when an AI search model (e.g., ChatGPT with web browsing) tests a sound prompt and produces a confident, incorrect final answer. A failure caused by an ambiguous or underspecified prompt, an error in reference answer, a formatting difference, or a correct model refusal does not count as a model failure.
+
+### What is a Golden Trajectory (GT) and how must it be formatted?
+
+The Golden Trajectory is the ideal step-by-step browsing sequence a person takes to reach the correct answer. Every constraint in the prompt must have its own step  formatted as:
+
+* 
+`Step X: Search: "<exact query>" and <navigation path>` 
+
+
+* `Step Y: Fetch: <URL> to find <answer> (at specific location on page)`
+* 
+`Step Z: Verify: confirms <specific constraint from prompt>` 
+
+
+* 
+`Step W: Filter: <reason how step narrows candidate answers>` 
+
+
+
+Every step must contain a direct deep-link URL openable in an incognito tab and specify the exact location on the page (paragraph, table row, section) where the fact lives.
+
+### Which sources are prohibited for key verification?
+
+Prohibited sources include:
+
+* Archive.org 
+
+
+* Wikipedia for key/decisive verification 
+
+
+* Audio or video content (e.g., YouTube, Spotify) 
+
+
+* Search-engine result pages or spatial-only Google Maps/Street View 
+
+
+* User-generated forums as sole factual sources 
+
+
+* Cached snapshots when live pages contradict them 
+
+
+* Paywalled sources inaccessible to reviewers 
+
+
+
+### When should a reviewer reject (send back) a task versus edit and approve it?
+
+* **Send Back (Red)**: Assigned only when a task is substantively broken (failing quality checks, wrong answer, unusable GT, false premises, or unverified sources) **and** receives an SQS score of 1 or 2.
+* **Edit & Approve (Yellow)**: Required for fixable, non-substantive issues (typos, grammar, minor GT ordering, missing page location anchors, date formatting, or link sorting) on tasks receiving an SQS score of 3 or higher. Rejecting an SQS 3+ task is a review error.
+
+
+
+### What is the protocol if AI/LLM usage is suspected in a task?
+
+If a task shows signs of being AI-generated (e.g., generic GT boilerplate, unreplaced placeholders like `[Acquiring Company]`, empty/deleted ChatGPT share links, or pasted LLM meta-commentary), reviewers must **escalate** the task to project administrators rather than sending it back. Escalation protects reviewer pay and flags policy abuse.
