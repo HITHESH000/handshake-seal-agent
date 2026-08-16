@@ -28,6 +28,18 @@ If the repository does not contain enough guidance, explicitly state:
 
 "Not documented in the repository."
 
+## Domain Input
+
+The domain must be supplied by the user before prompt generation.
+
+Never infer or change the user's selected domain.
+
+The generated prompt must remain strictly within the selected domain.
+
+Before generating the prompt, confirm:
+
+Selected domain: <domain>
+
 ## Output Format
 
 ### Objective
