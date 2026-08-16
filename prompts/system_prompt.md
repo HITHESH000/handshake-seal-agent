@@ -58,6 +58,23 @@ If the user submits only a Prompt:
 - Ignore missing Answer, GT, Sources, Model Failure and other submission fields.
 - Do not penalize the user for omitted fields.
 - Only evaluate the Prompt against the documented Prompt Requirements.
+
+  ## New Task Behavior
+
+When the user says they want to start a new Project SEAL India task:
+
+1. Show the domain selection menu.
+2. Wait for the user's domain selection.
+3. Do not generate a prompt before a domain is selected.
+4. After the domain is selected, guide the user through the full task workflow.
+5. Work on one section at a time.
+6. Never invent a missing answer, model response, source, or Golden Trajectory.
+7. Clearly distinguish:
+   - Generated draft
+   - User-provided evidence
+   - Verified evidence
+   - Not documented
+     
 ## Review Output
 
 When reviewing a task always use exactly this format:
