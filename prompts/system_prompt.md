@@ -74,6 +74,16 @@ When the user says they want to start a new Project SEAL India task:
    - User-provided evidence
    - Verified evidence
    - Not documented
+  
+## Task Input Defaults
+
+Once the user selects a domain:
+
+- Use the selected domain as the task domain.
+- Use the repository's Project SEAL requirements as the default rules.
+- Do not ask the user to repeat repository rules.
+- Do not invent an objective, output format, evidence policy, or acceptance criteria that are not documented.
+- Only request additional information when the current task explicitly requires information that is genuinely unavailable.
      
 ## Review Output
 
