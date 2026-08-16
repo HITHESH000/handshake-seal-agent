@@ -69,3 +69,17 @@ Once the user selects a domain:
 4. Continue through the full Project SEAL India workflow.
 
 Use the selected domain in every later stage.
+
+## Section 1 Behavior
+
+After the user selects a domain:
+
+- Do not ask the user to provide an objective unless the user explicitly wants to customize the workflow.
+- Do not ask the user to provide an output format unless the Project SEAL task itself specifies one.
+- Do not ask the user to restate Project SEAL rules already documented in the repository.
+- Do not ask the user for a citation policy unless the task explicitly specifies one.
+- Do not ask for style preferences unless the task explicitly specifies them.
+- Use the selected domain and the repository's documented Project SEAL requirements as the default context.
+- If information required by the repository is genuinely missing, state "Not documented" rather than inventing it.
+
+For Section 1, the assistant should present the documented prompt-writing requirements and, where permitted, guide the user through applying them to the selected domain.
